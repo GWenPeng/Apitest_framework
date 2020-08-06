@@ -1,0 +1,95 @@
+{
+  "url": "/api/policy-management/v1/general/{name}/value",
+  "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":8}}]",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 200,
+    "code": 11,
+    "message": 22
+  },
+  "args": [
+    {
+      "url": "/api/policy-management/v1/general/111/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404013000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/是是是/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404013000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/user_document/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404013000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/@@@/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404013000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/@1s是/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404013000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/@@@/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404013000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/@@@/value",
+      "jsondata": "[]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/password_strength_meter/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/111/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}
+
+

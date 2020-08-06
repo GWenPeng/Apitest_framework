@@ -1,0 +1,68 @@
+{
+  "url": "/api/policy-management/v1/general",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "params": "{\"offset\":\"0\",\"limit\":\"20\",\"name\":\"client_restriction\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"client_restriction\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"current\",\"mode\":\"default\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"multi_factor_auth\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"client_restriction\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"default\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"multi_factor_auth\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+
+
+
+
+    {
+      "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"multi_factor_auth\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"multi_factor_auth\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"multi_factor_auth,password_strength_meter\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"multi_factor_auth,password_strength_meter,client_restriction,user_document,user_document_sharing\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    }
+  ]
+}

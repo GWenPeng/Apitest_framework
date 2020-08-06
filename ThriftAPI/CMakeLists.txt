@@ -1,0 +1,27 @@
+#包含prep.cmake(定义编译时的选项)
+include($ENV{CMAKE}/modules/pmake.cmake)
+
+#设置版本号，和向下兼容性
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_POLICY(VERSION 2.8)
+
+#project name :ThriftAPI
+PROJECT(ThriftAPI)
+
+#安装 python 库
+setup_py($ENV{THRIFTAPI})
+
+#打包
+set(CPACK_GENERATOR "TGZ")
+set(CPACK_OUTPUT_FILE_PREFIX ${PACKAGE_PATH})
+
+INSTALL(DIRECTORY . DESTINATION app/ThriftAPI
+		 PATTERN "*.svn" EXCLUDE
+		 PATTERN "*.pyc" EXCLUDE
+		 PATTERN "CMakeLists.txt" EXCLUDE
+		 PATTERN "thrift.exe" EXCLUDE
+		 PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ
+		 GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
+)
+
+include (CPack)

@@ -1,0 +1,32 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":5}}],\"name\":\"demo\"}",
+  "checkpoint": {
+          "status_code": 201
+      },
+  "args": [
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":1}}],\"name\":\"1G\"}",
+        "checkpoint": {
+            "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":20000}}],\"name\":\"20000G\"}",
+        "checkpoint": {
+            "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":1.25}}],\"name\":\"1.25G\"}",
+        "checkpoint": {
+            "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":5.978}}],\"name\":\"5.978G\"}",
+        "checkpoint": {
+            "status_code": 201
+      }
+    }
+  ]
+}

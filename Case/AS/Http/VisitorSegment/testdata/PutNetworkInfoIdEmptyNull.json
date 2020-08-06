@@ -1,0 +1,55 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 404
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/null",
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "detail": {"notfound_params": ["id"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/413",
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "detail": {"notfound_params": ["id"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/true",
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "detail": {"notfound_params": ["id"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/5.67",
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "detail": {"notfound_params": ["id"]}
+        }
+      }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "jsondata": [{"name":"multi_factor_auth","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+  "mark": "xx",
+  "remark": "xx",
+  "args": [
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":false,"otp":true,"password_error_count":0,"sms_vcode":false}}],
+      "mark": "otp",
+      "remark": "启用双因子，设置为账号+动态密码模式，opt=true"
+    },
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":false,"otp":false,"password_error_count":0,"sms_vcode":true}}],
+      "mark": "sms_vcode",
+      "remark": "启用双因子，设置为账号+短信验证码模式，sms_vcode=true"
+    }
+  ]
+}

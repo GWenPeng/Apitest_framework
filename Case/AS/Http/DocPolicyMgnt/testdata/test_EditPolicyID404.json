@@ -1,0 +1,27 @@
+{
+  "error_id": "111",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 400,
+    "code": 400000,
+    "message": "Invalid request."
+  },
+  "args": [
+    {
+      "error_id": "   ",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404014000,
+        "message": "Resource not found."
+      }
+    },
+    {
+      "error_id": "1111",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404014000,
+        "message": "Resource not found."
+      }
+    }
+  ]
+}

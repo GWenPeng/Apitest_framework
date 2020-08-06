@@ -1,0 +1,58 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":5}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 201
+  },
+  "args": [
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True}}],\"name\":\"缺少size\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":11,\"size\":2}}],\"name\":\"create类型错误\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":True}}],\"name\":\"size类型错误\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":0.5}}],\"name\":\"size=0.5\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":0}}],\"name\":\"size=0\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":-5}}],\"name\":\"size=-5\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    }
+  ]
+}

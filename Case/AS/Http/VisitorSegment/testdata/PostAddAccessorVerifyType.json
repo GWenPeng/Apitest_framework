@@ -1,0 +1,116 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/23.33/accessor",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id": "23.33",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/true/accessor",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id": "true",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/5454/accessor",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c", "accessor_type": "user"}],
+        "checkpoint": {
+           "status_code": 207,
+          "id": "5454",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": false, "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_id: Invalid type. Expected: string, given: boolean",
+          "detail": {"invalid_params":["0.accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": 34.45, "accessor_type": "user"}],
+        "checkpoint": {
+           "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_id: Invalid type. Expected: string, given: number",
+          "detail": {"invalid_params":["0.accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": 2020, "accessor_type": "user"}],
+        "checkpoint": {
+         "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_id: Invalid type. Expected: string, given: integer",
+          "detail": {"invalid_params":["0.accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "add", "accessor_type": true}],
+        "checkpoint": {
+          "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_type: Invalid type. Expected: string, given: boolean",
+          "detail": {"invalid_params":["0.accessor_type"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "add", "accessor_type": 34.56}],
+        "checkpoint": {
+           "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_type: Invalid type. Expected: string, given: number",
+          "detail": {"invalid_params":["0.accessor_type"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "add", "accessor_type": 3456}],
+        "checkpoint": {
+           "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_type: Invalid type. Expected: string, given: integer",
+          "detail": {"invalid_params":["0.accessor_type"]}
+        }
+      }
+    ]
+}

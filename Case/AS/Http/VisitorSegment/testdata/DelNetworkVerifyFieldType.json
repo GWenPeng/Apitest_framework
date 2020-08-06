@@ -1,0 +1,38 @@
+{
+    "url": "https://10.2.176.245/api/policy-management/v1/user-login/network-restriction/network/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/true",
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail":{"notfound_params": ["id"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/54.4",
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail":{"notfound_params": ["id"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/2020",
+        "checkpoint": {
+          "status_code": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail":{"notfound_params": ["id"]}
+        }
+      }
+    ]
+}

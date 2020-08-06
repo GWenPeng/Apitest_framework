@@ -1,0 +1,16 @@
+{
+  "url": "/api/policy-management/v1/general/",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": {"locked": true},
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "jsondata": {"locked": true},
+      "checkpoint": {
+        "status_code": 200
+      }
+    }
+  ]
+}

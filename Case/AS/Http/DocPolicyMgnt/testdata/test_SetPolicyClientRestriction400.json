@@ -1,0 +1,78 @@
+{
+  "url": "/api/policy-management/v1/general/client_restriction/value",
+  "jsondata": "{\"value\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"demo\"}",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 200,
+    "code": 11,
+    "message": 22
+  },
+  "args": [
+    {
+      "jsondata": "[{\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":11,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":11,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":11,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":11,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":11,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":11}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}
+
+

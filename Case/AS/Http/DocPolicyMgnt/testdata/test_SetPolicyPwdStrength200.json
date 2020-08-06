@@ -1,0 +1,70 @@
+{
+  "url": "/api/policy-management/v1/general/password_strength_meter/value",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":18}}]",
+  "checkpoint": {
+    "status_code": 200,
+    "strong_pwd_length": 11,
+    "strogh_pwd_status": 22
+  },
+  "args": [
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 8,
+        "strogh_pwd_status": 1
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":50}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 50,
+        "strogh_pwd_status": 1
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":false,\"length\":6}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 50,
+        "strogh_pwd_status": 0
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":99}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 99,
+        "strogh_pwd_status": 1
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":false,\"length\":100}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 99,
+        "strogh_pwd_status": 0
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":false,\"length\":5}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 99,
+        "strogh_pwd_status": 0
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":false,\"length\":101}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "strong_pwd_length": 99,
+        "strogh_pwd_status": 0
+      }
+    }
+  ]
+}
+
+

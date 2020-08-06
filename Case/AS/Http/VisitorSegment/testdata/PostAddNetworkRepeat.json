@@ -1,0 +1,56 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"张三专用","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 409,
+          "code": 409013000,
+          "message": "Conflict resource.",
+          "detail": {"conflict_params": ["name"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhang33","start_ip":"192.168.1.1","end_ip":"192.168.1.2","ip_address":"192.168.1.1","netmask":"255.255.255.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 201
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhang33","start_ip":"192.168.1.1","end_ip":"192.168.1.2","ip_address":"192.168.12.1","netmask":"255.255.255.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 409,
+          "code": 409013000,
+          "message": "Conflict resource.",
+          "detail": {"conflict_params": ["ip_address","netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"张三专用2","start_ip":"192.168.1.1","end_ip":"192.168.1.2","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 409,
+          "code": 409013000,
+          "message": "Conflict resource.",
+          "detail": {"conflict_params": ["start_ip","end_ip"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"张三专用3","start_ip":"192.168.12.1","end_ip":"255.255.252.0","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 201
+
+        }
+      }
+    ]
+}

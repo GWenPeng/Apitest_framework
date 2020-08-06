@@ -1,0 +1,32 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "split_url": "",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/accessor/234562BE-88FF-440-9BFF-447F139871A2/network?offset=0&limit=1000",
+          "split_url": "",
+          "checkpoint": {
+            "status_code": 404,
+            "res": {"code": 404013000, "message": "Resource not found.", "cause": "",
+                  "detail": {"notfound_params": ["accessor_id"]}}
+
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/accessor/266c6a42-6131-4d62-8f39-853e7093701c/network?offset=0&limit=1000",
+          "split_url": "",
+          "checkpoint": {
+            "status_code": 200,
+            "res": {"count": 0, "data": []}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/accessor/151bcb65-48ce-4b62-973f-0bb6685f9cb8/network?offset=0&limit=1000",
+          "split_url": "",
+          "checkpoint": {
+            "status_code": 200,
+            "res": {"count": 0, "data": []}
+        }
+      }
+    ]
+}

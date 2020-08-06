@@ -1,0 +1,32 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhang","start_ip":"192.168.2.200","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "cause": "Start_ip can not greater than end_ip.",
+          "detail": {"invalid_params": ["start_ip", "end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhang","start_ip":"192.168.2.200","end_ip":"192.168.2.200","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 201
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhang","start_ip":"192.168.2.200","end_ip":"192.168.2.201","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 201
+        }
+      }
+    ]
+}

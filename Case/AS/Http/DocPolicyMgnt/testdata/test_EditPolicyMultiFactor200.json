@@ -1,0 +1,18 @@
+{
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":False,\"otp\":True,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"demo\"}",
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"图形验证码错误次数0\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":50,\"sms_vcode\":False}}],\"name\":\"图形验证码错误次数50\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":99,\"sms_vcode\":False}}],\"name\":\"图形验证码错误次数99\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":False,\"otp\":True,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"开启动态密码和短信验证码\"}"
+    }
+  ]
+}

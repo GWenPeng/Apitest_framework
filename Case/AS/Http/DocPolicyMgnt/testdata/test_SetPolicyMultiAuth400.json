@@ -1,0 +1,110 @@
+{
+  "url": "/api/policy-management/v1/general/multi_factor_auth/value",
+  "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 200,
+    "code": 11,
+    "message": 22
+  },
+  "args": [
+    {
+      "jsondata": "[{\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":11,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":11,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":-1,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":100,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":11,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":11}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":true,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":true}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":false,\"otp\":true,\"password_error_count\":0,\"sms_vcode\":true}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":true,\"password_error_count\":0,\"sms_vcode\":true}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}
+
+

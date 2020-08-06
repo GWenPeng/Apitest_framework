@@ -1,0 +1,134 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "{\"host\":\"10.2.176.208\",\"port\":443,\"type\":\"child\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":33,"host":"10.2.180.162","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid type"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":1231,"port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "1231 is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":3.23,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "3.23 is not of type 'integer'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":443,"credential_id":899,"credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "899 is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":443,"credential_id":true,"credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "True is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":443,"credential_id":"admin","credential_key":98.45},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "98.45 is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":443,"credential_id":"admin","credential_key":false},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "False is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":[1,2],"port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "[1, 2] is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"12.34.44","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400014205,
+          "cause": "Connection timed out",
+          "remark": "ASP-8087[文档域管理]-文档域添加接口，添加平级域报500错误，期望，抛出400错误"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"10/2/180/223","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid host"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"10.2.180.223","port":false,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "False is not of type 'integer'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"10.2.180.223","port":"4500","credential_id":"admin","credential_key":"eisoo.com","secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'4500' is not of type 'integer'"
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"10.2.180.223","port":443,"credential_id":88.3,"credential_key":"eisoo.com","secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "88.3 is not of type 'string'"
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"10.2.180.223","port":443,"credential_id":"admin","credential_key":344,"secret":"secrect","network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "344 is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","host":"10.2.180.223","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":888,"network_type": "direct"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "888 is not of type 'string'"
+        }
+      }
+
+
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"\\","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["\\"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"//","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["//"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":":","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": [":"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"*","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["*"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"?","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["?"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"\"","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["\""]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"<>","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["<>"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"|","start_ip":"192.168.2.22","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["|"]}
+
+        }
+      }
+    ]
+}

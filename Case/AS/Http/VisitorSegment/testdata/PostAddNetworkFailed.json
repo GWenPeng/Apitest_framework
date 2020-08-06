@@ -1,0 +1,38 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"的撒娇的话的撒很大ddhajhdsjahdsjahfasfdsgsdfgdsajdksafka飞鸟时代点十分惊恐山谷分的高分航空股份jdksjkfjdksjgkdfjghkdjhkdfdsdfkjsdkfjdskfdsjskfjfdsfgsdgdsdsgds","start_ip":"192.168.2.100","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400013001,
+          "message": "Invalid name.",
+          "detail": {"names": ["的撒娇的话的撒很大ddhajhdsjahdsjahfasfdsgsdfgdsajdksafka飞鸟时代点十分惊恐山谷分的高分航空股份jdksjkfjdksjgkdfjghkdjhkdfdsdfkjsdkfjdskfdsjskfjfdsfgsdgdsdsgds"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhangsan","start_ip":"192.168.2.100","end_ip":"192.168.2.199","ip_address":"10.2.176.245","netmask":"255.255.255.256","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "jsondata": {"name":"zhangsan","start_ip":"192.168.2.100","end_ip":"999.999.999.999","ip_address":"10.2.176.245","netmask":"255.255.255.255","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+  "url": "xx",
+  "jsondata": {},
+  "name": "xx",
+  "locked": 1,
+  "remark": "xx",
+  "args": [
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction/state",
+      "jsondata": {"locked":true},
+      "name": "client_restriction",
+      "locked": 1,
+      "remark": "锁定单个策略"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction,multi_factor_auth/state",
+      "jsondata": {"locked":true},
+      "name": "client_restriction,multi_factor_auth",
+      "locked": 1,
+      "remark": "锁定多个策略"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing/state",
+      "jsondata": {"locked":true},
+      "name": "client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing",
+      "locked": 1,
+      "remark": "锁定所有策略"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing/state",
+      "jsondata": {"locked":true},
+      "name": "client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing",
+      "locked": 1,
+      "remark": "策略锁定状态下重复锁定"
+    },
+
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction/state",
+      "jsondata": {"locked":false},
+      "name": "client_restriction",
+      "locked": 0,
+      "remark": "解锁单个策略"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction,multi_factor_auth/state",
+      "jsondata": {"locked":false},
+      "name": "client_restriction,multi_factor_auth",
+      "locked": 0,
+      "remark": "解锁多个策略"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing/state",
+      "jsondata": {"locked":false},
+      "name": "client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing",
+      "locked": 0,
+      "remark": "解锁所有策略"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing/state",
+      "jsondata": {"locked":false},
+      "name": "client_restriction,multi_factor_auth,network_restriction,password_strength_meter,user_document,user_document_sharing",
+      "locked": 0,
+      "remark": "策略解锁状态下重复解锁"
+    }
+  ]
+}

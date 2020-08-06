@@ -1,0 +1,133 @@
+{
+  "params":"xx",
+  "checkpoint": {},
+  "remark": "string",
+  "args": [
+    {
+      "params":{},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "缺少mode参数"
+    },
+    {
+      "params":{"mode": ""},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "mode参数为空"
+    },
+    {
+      "params":{"mode":"current","mode": "default"},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "多个mode参数"
+    },
+    {
+      "params":{"mode":"current"},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "mode=current"
+    },
+    {
+      "params":{"mode":"default"},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "mode=default"
+    },
+    {
+      "params":{"mode":"               default"},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "mode参数值带有空格"
+    },
+    {
+      "params":{"mode":""},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "mode为空字符串"
+    },
+
+
+
+    {
+      "params":{},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "缺少offset参数"
+    },
+    {
+      "params":{"offset":""},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "offset参数为空"
+    },
+    {
+      "params":{"offset":0,"offset": 5},
+      "checkpoint": {"count": 6,"data": 1},
+      "remark": "传入多个offset"
+    },
+    {
+      "params":{"offset":0},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "offset=0"
+    },
+    {
+      "params":{"offset":3},
+      "checkpoint": {"count": 6,"data": 3},
+      "remark": "offset=3"
+    },
+    {
+      "params":{"offset":6},
+      "checkpoint": {"count": 6,"data": 0},
+      "remark": "offset=6"
+    },
+    {
+      "params":{"offset":8},
+      "checkpoint": {"count": 6,"data": 0},
+      "remark": "offset>总数"
+    },
+
+
+
+    {
+      "params":{},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "缺少limit参数"
+    },
+    {
+      "params":{"limit": ""},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit参数为空"
+    },
+    {
+      "params":{"limit": 2,"limit": 1},
+      "checkpoint": {"count": 6,"data": 1},
+      "remark": "传入多个limit参数"
+    },
+    {
+      "params":{"limit": 1},
+      "checkpoint": {"count": 6,"data": 1},
+      "remark": "limit=1"
+    },
+    {
+      "params":{"limit": 20},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit=6"
+    },
+    {
+      "params":{"limit": 200},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit=200"
+    },
+    {
+      "params":{"limit": 201},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit=201"
+    },
+    {
+      "params":{"limit": 999},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit=999"
+    },
+    {
+      "params":{"limit": 1000},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit=1000"
+    },
+    {
+      "params":{"limit": 6},
+      "checkpoint": {"count": 6,"data": 6},
+      "remark": "limit=总数"
+    }
+  ]
+}

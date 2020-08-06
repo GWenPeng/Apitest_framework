@@ -1,0 +1,60 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "param": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network?key_word=&offset=\"\"&limit=1",
+        "param": {"offset": "","limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "message": "Invalid request.",
+          "detail": {"invalid_params":["offset"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network?key_word=&offset=0&limit=\"\"",
+        "param": {"offset": 0,"limit": "","key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "message": "Invalid request.",
+          "detail": {"invalid_params":["limit"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network?key_word=&offset=null&limit=1000",
+        "param": {"offset": null,"limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "message": "Invalid request.",
+          "detail": {"invalid_params":["offset"]}
+        }
+      },
+       {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network?key_word=&offset=0&limit=null",
+        "param": {"offset": 0,"limit": null,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "message": "Invalid request.",
+          "detail": {"invalid_params":["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network?key_word=null&offset=0&limit=1000",
+        "param": {"offset": 0,"limit": -1,"key_word": null},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network?key_word=\"\"&offset=0&limit=1000",
+        "param": {"offset": 0,"limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200
+        }
+      }
+
+    ]
+}

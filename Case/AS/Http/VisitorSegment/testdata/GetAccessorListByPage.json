@@ -1,0 +1,127 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "split_url": "",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=1000",
+          "checkpoint": {
+               "offset": 0,
+            "status_code": 200,
+            "count":21,
+            "len.data": 21
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":21,
+            "len.data": 20
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=1&limit=1000",
+          "checkpoint": {
+            "offset": 1,
+            "status_code": 200,
+            "count":21,
+            "len.data": 20
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=2&limit=1000",
+          "checkpoint": {
+            "offset": 2,
+            "status_code": 200,
+            "count":21,
+            "len.data": 19
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=19&limit=1000",
+          "checkpoint": {
+            "offset": 19,
+            "status_code": 200,
+            "count":21,
+            "len.data": 2
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=20&limit=1000",
+          "checkpoint": {
+            "offset": 20,
+            "status_code": 200,
+            "count":21,
+            "len.data": 1
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=21&limit=1000",
+          "checkpoint": {
+            "offset": 21,
+            "status_code": 200,
+            "count":21,
+            "len.data": 0
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=0",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=1",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":21,
+            "len.data": 1
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=20",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":21,
+            "len.data": 20
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=21",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":21,
+            "len.data": 21
+        }
+      },
+       {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=22",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":21,
+            "len.data": 21
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=22&limit=1000",
+          "checkpoint": {
+            "offset": 22,
+            "status_code": 200,
+            "count":21,
+            "len.data": 0
+        }
+      }
+    ]
+}

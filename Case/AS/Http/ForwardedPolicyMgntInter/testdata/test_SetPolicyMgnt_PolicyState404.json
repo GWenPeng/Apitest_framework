@@ -1,0 +1,32 @@
+{
+  "url": "xx",
+  "jsondata": {},
+  "mark": "xx",
+  "remark": "xx",
+  "args": [
+    {
+      "url": "/api/document-domain-management/v1/policy/general/state",
+      "jsondata": {"locked":true},
+      "mark": 0,
+      "remark": "url缺少name参数，同时去除/"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general//state",
+      "jsondata": {"locked":true},
+      "mark": 0,
+      "remark": "url缺少name参数，同时保留/"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/111/state",
+      "jsondata": {"locked":true},
+      "mark": 1,
+      "remark": "url中name参数不存在，为111"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/sss/state",
+      "jsondata": {"locked":true},
+      "mark": 1,
+      "remark": "url中name参数不存在，为sss"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "url": "/api/policy-management/v1/general/multi_factor_auth/value",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+  "checkpoint": {
+    "status_code": 200,
+    "number": 11
+  },
+  "args": [
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": "{\"passwdErrCnt\": 0, \"isEnable\": true}"
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":50,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": "{\"passwdErrCnt\": 50, \"isEnable\": true}"
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":99,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": "{\"passwdErrCnt\": 99, \"isEnable\": true}"
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":false,\"image_vcode\":true,\"otp\":false,\"password_error_count\":50,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": "{\"passwdErrCnt\": 99, \"isEnable\": false}"
+      }
+    }
+  ]
+}
+
+

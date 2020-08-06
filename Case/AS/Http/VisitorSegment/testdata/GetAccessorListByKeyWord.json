@@ -1,0 +1,45 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "split_url": "",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=eisoo.com1&offset=0&limit=1000",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":11,
+            "len.data": 11
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=eisoo.com0&offset=0&limit=1000",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":1,
+            "len.data": 1
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=eisoo.com2&offset=0&limit=1000",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":2,
+            "len.data": 2
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=eisoo.com111&offset=0&limit=1000",
+          "checkpoint": {
+            "offset": 0,
+            "status_code": 200,
+            "count":0,
+            "len.data": 0
+        }
+      }
+    ]
+}

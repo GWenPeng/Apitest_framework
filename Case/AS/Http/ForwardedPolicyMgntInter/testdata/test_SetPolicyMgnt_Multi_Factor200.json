@@ -1,0 +1,32 @@
+{
+  "jsondata": [{"name":"multi_factor_auth","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+  "number": 888,
+  "remark": "xx",
+  "args": [
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":0,"sms_vcode":false}}],
+      "number": "{\"passwdErrCnt\": 0, \"isEnable\": true}",
+      "remark": "启用双因子，设置为账号+图形验证码，password_error_count=0"
+    },
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":8,"sms_vcode":false}}],
+      "number": "{\"passwdErrCnt\": 8, \"isEnable\": true}",
+      "remark": "启用双因子，设置为账号+图形验证码，password_error_count=8"
+    },
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":50,"sms_vcode":false}}],
+      "number": "{\"passwdErrCnt\": 50, \"isEnable\": true}",
+      "remark": "启用双因子，设置为账号+图形验证码，password_error_count=50"
+    },
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":99,"sms_vcode":false}}],
+      "number": "{\"passwdErrCnt\": 99, \"isEnable\": true}",
+      "remark": "启用双因子，设置为账号+图形验证码，password_error_count=99"
+    },
+    {
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":false,"image_vcode":true,"otp":false,"password_error_count":99,"sms_vcode":false}}],
+      "number": "{\"passwdErrCnt\": 99, \"isEnable\": false}",
+      "remark": "关闭双因子开关"
+    }
+  ]
+}

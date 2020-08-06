@@ -1,0 +1,46 @@
+{
+  "url": "/api/policy-management/v1/general/password_strength_meter/value",
+  "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":18}}]",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 400,
+    "code": 400000000,
+    "message": "Invalid request"
+  },
+  "args": [
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":11,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":true}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":7}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":100}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}
+
+

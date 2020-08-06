@@ -1,0 +1,79 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "param": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {
+          "offset": -1,
+          "limit": -1,
+          "key_word": ""
+        },
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["offset"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {
+          "offset": 0,
+          "limit": -5,
+          "key_word": ""
+        },
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {
+          "offset": 201,
+          "limit": 1000,
+          "key_word": ""
+        },
+        "checkpoint": {
+          "status_code": 200,
+          "count": 201,
+          "data.len":0
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {
+          "offset": 0,
+          "limit": 201,
+          "key_word": ""
+        },
+        "checkpoint": {
+          "status_code": 200,
+          "count": 201,
+          "data.len":201
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {
+          "offset": 0,
+          "limit": 400,
+          "key_word": ""
+        },
+        "checkpoint": {
+          "status_code": 200,
+          "count": 201,
+          "data.len":201
+        }
+      }
+
+    ]
+}

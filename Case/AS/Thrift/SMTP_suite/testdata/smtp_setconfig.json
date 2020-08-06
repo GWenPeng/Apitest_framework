@@ -1,0 +1,26 @@
+{   "server": "lisi",
+    "safeMode": 1,
+    "port": 2,
+    "email": "5@q.com",
+    "password": "4",
+    "openRelay": true,
+    "checkpoint": {
+        "email": "4@q.com",
+        "password": "5"
+    },
+    "args": [
+        {
+            "server": "wangwu",
+            "checkpoint": {
+                "server": "wangwu"
+
+            }
+        },
+        {
+            "server": "zhangsan",
+             "checkpoint": {
+                "server": "zhangsan"
+            }
+        }
+    ]
+}

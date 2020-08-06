@@ -1,0 +1,78 @@
+{
+    "url": "/api/policy-management/v1/general/network_restriction/value",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":0}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":1}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":"string"}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":""}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":null}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":0.2}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/general/network_restriction/value",
+        "jsondata": [{"name":"network_restriction","value":{"is_enabled":"?/#&*~"}}],
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail": {"invalid_params": ["value"]}
+        }
+      }
+    ]
+}

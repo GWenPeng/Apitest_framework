@@ -1,0 +1,107 @@
+{
+  "params":"xx",
+  "remark": "string",
+  "args": [
+    {
+      "params":{"mode":1.5},
+      "remark": "mode=1.5"
+    },
+    {
+      "params":{"mode":"模式"},
+      "remark": "mode为中文"
+    },
+    {
+      "params":{"mode":"mode"},
+      "remark": "mode为英文"
+    },
+    {
+      "params":{"mode":"@#$"},
+      "remark": "mode为特殊符号"
+    },
+    {
+      "params":{"mode":"@s是1"},
+      "remark": "mode为特殊符号"
+    },
+    {
+      "params":{"mode":"null"},
+      "remark": "mode=null"
+    },
+
+
+    {
+      "params":{"offset":1.5},
+      "remark": "offset=1.5"
+    },
+    {
+      "params":{"offset":"'111'"},
+      "remark": "offset传入纯数字字符串"
+    },
+    {
+      "params":{"offset":"sss"},
+      "remark": "offset传入纯英文字符串"
+    },
+    {
+      "params":{"offset":"中中中"},
+      "remark": "offset传入纯中文字符串"
+    },
+    {
+      "params":{"offset":"@#￥"},
+      "remark": "offset包含特殊字符"
+    },
+    {
+      "params":{"offset":"null"},
+      "remark": "offset=null"
+    },
+    {
+      "params":{"offset":-1},
+      "remark": "offset<0"
+    },
+
+
+
+    {
+      "params":{"limit":1.5},
+      "remark": "limit=1.5"
+    },
+    {
+      "params":{"limit":"'111'"},
+      "remark": "limit为纯数字字符串"
+    },
+    {
+      "params":{"limit":"sss"},
+      "remark": "limit为纯英文字符串"
+    },
+    {
+      "params":{"limit":"中中中"},
+      "remark": "limit为纯中文字符串"
+    },
+    {
+      "params":{"limit":"@@@"},
+      "remark": "limit包含特殊符号"
+    },
+    {
+      "params":{"limit":"@s是1"},
+      "remark": "limit为混合字符"
+    },
+    {
+      "params":{"limit":"null"},
+      "remark": "limit=null"
+    },
+    {
+      "params":{"limit":0},
+      "remark": "limit=0"
+    },
+    {
+      "params":{"limit":-1},
+      "remark": "limit=-1"
+    },
+    {
+      "params":{"limit":-10},
+      "remark": "limit=-10"
+    },
+    {
+      "params":{"limit":1001},
+      "remark": "limit=1001"
+    }
+  ]
+}

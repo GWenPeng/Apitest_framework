@@ -1,0 +1,38 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network//accessor",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 404
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{ "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0: accessor_id is required",
+          "detail": {"invalid_params":["0"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c"}],
+        "checkpoint": {
+           "status_code": 207,
+          "id": "",
+          "status": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0: accessor_type is required",
+          "detail": {"invalid_params":["0"]}
+        }
+      }
+    ]
+}

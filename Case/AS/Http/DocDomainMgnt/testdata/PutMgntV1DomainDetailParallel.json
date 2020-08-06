@@ -1,0 +1,111 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "{\"host\":\"10.2.176.208\",\"port\":443,\"type\":\"parallel\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":443,\"credential_id\":\"admin8001\",\"credential_key\":\"eisoo.com\"}",
+        "checkpoint": {
+          "status_code": 401,
+          "code": 401014201,
+          "message": "Invalid client",
+          "cause":"invalid_client"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":443,\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com123\"}",
+        "checkpoint": {
+          "status_code": 401,
+          "code": 401014201,
+          "message": "Invalid client",
+          "cause":"invalid_client"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080,\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code":400014205,
+          "message": "Linked failed",
+          "remark": "修改域为8080时，验证端口号时不可用，连接失败"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080,\"credential_id\":\"admin123\",\"credential_key\":\"eisoo.com12345\"}",
+        "checkpoint": {
+          "status_code": 401,
+          "code": 401014201,
+          "message": "Invalid client",
+          "cause":"invalid_client"
+        }
+      },
+
+
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":443,\"credential_id\":None,\"credential_key\":\"eisoo.com123\",\"secret\":\"weewwe\"}",
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080,\"credential_id\":\"admin\",\"credential_key\":None,\"secret\":\"weewwe\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080,\"credential_id\":\"admin123\",\"credential_key\":\"eisoo.com12345\",\"secret\":None}",
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":443,\"credential_id\":\"\",\"credential_key\":\"eisoo.com123\",\"secret\":\"weewwe\"}",
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080,\"credential_id\":\"admin\",\"credential_key\":\"\",\"secret\":\"weewwe\"}",
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080,\"credential_id\":\"\",\"credential_key\":\"\",\"secret\":\"\"}",
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":8080}",
+        "checkpoint": {
+          "status_code": 400,
+          "code":400014205,
+          "message": "Linked failed"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"parallel\",\"port\":443,\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+        "checkpoint": {
+          "status_code": 200
+        }
+      }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "url": "/api/document-domain-management/v1/domain/48d1874b-cf01-4e76-af4e-671e574bec8c",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/48d1874b-cf011-4e76-af4e-671e574bec8c",
+        "checkpoint": {
+          "status_code": 404,
+          "cause": "domain_id does not exist",
+          "detail.notfound_params": "48d1874b-cf011-4e76-af4e-671e574bec8c"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "checkpoint": {
+          "status_code": 405
+        }
+      }
+    ]
+}

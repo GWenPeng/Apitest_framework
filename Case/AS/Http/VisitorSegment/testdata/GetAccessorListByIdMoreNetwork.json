@@ -1,0 +1,25 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "split_url": "",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/accessor/",
+          "split_url": "/network?offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":21,
+            "len.data": 21
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/accessor/151bcb65-48ce-4b62-973f-0bb6685f9cb8/network?offset=0&limit=1000",
+          "split_url": "",
+          "checkpoint": {
+            "status_code": 200,
+            "count":21,
+            "len.data": 21
+        }
+      }
+    ]
+}

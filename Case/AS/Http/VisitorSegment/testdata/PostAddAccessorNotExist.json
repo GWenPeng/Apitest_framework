@@ -1,0 +1,45 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/44e567eb-da0c-4d90-b49e-3501f103eb5e/accessor",
+        "jsondata": [{"accessor_id": "add", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id":"44e567eb-da0c-4d90-b49e-3501f103eb5e",
+          "status": 404,
+          "body.code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]},
+          "remark": "accessor_id不存在时报404不存在 BUGASP-6816"
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-8533e7093701c", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 404,
+          "body.code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]},
+          "remark": "accessor_id不存在时报404不存在 BUGASP-6816"
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-8533e7093701c", "accessor_type": "department"}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 404,
+          "body.code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]},
+          "remark": "accessor_id不存在时报404不存在，BUGASP-6816"
+        }
+      }
+    ]
+}

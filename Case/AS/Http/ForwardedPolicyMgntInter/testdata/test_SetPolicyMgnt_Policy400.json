@@ -1,0 +1,144 @@
+{
+  "name": "xx",
+  "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+  "remark": "xx",
+  "args": [
+    {
+      "name": "client_restriction",
+      "jsondata": [{"value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "remark": "缺少name字段"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false}}],
+      "remark": "value字段中缺少Windows参数"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":111,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "remark": "Android参数类型错误，传参int"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":1.23,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "remark": "IOS参数类型错误，传参float"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":"sss","mobile_web":false,"pc_web":false,"windows":false}}],
+      "remark": "Mac参数类型错误，传参英文字符串"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":false,"mobile_web":"中中中","pc_web":false,"windows":false}}],
+      "remark": "mobile_web参数类型错误，传参中文字符串"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":"111","windows":false}}],
+      "remark": "pc_web参数类型错误，传参数字字符串"
+    },
+    {
+      "name": "client_restriction",
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":"@@@"}}],
+      "remark": "windows参数类型错误，传参特殊字符"
+    },
+
+
+
+
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":5,"sms_vcode":false}}],
+      "remark": "缺少name字段"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":5}}],
+      "remark": "value字段缺少sms_vcode参数"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":111,"image_vcode":true,"otp":false,"password_error_count":5,"sms_vcode":false}}],
+      "remark": "enable参数类型错误，传参int"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":1.23,"otp":false,"password_error_count":5,"sms_vcode":false}}],
+      "remark": "image_vcode参数类型错误，传参浮点"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":-1,"sms_vcode":false}}],
+      "remark": "image_vcode参数错误，不在范围内为-1"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":100,"sms_vcode":false}}],
+      "remark": "image_vcode参数错误，不在范围内为100"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":"sss","password_error_count":5,"sms_vcode":false}}],
+      "remark": "opt参数类型错误，传参英文字符串"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":5,"sms_vcode":"中中中"}}],
+      "remark": "sms_vcode参数类型错误，传参中文字符串"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":true,"password_error_count":5,"sms_vcode":false}}],
+      "remark": "同时开启两种认证方式，开启image_vcode和opt"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":false,"password_error_count":5,"sms_vcode":true}}],
+      "remark": "同时开启两种认证方式，开启image_vcode和sms_vcode"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":false,"otp":true,"password_error_count":5,"sms_vcode":true}}],
+      "remark": "同时开启两种认证方式，开启opt和sms_vcode"
+    },
+    {
+      "name": "multi_factor_auth",
+      "jsondata": [{"name":"multi_factor_auth","value":{"enable":true,"image_vcode":true,"otp":true,"password_error_count":5,"sms_vcode":true}}],
+      "remark": "3种认证方式全部开启"
+    },
+
+
+
+    {
+      "name": "password_strength_meter",
+      "jsondata": [{"value":{"enable":false,"length":33}}],
+      "remark": "缺少name字段"
+    },
+    {
+      "name": "password_strength_meter",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":false}}],
+      "remark": "value字段中缺少length参数"
+    },
+    {
+      "name": "password_strength_meter",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":false,"length":"sss"}}],
+      "remark": "length参数类型错误，传参字符串"
+    },
+    {
+      "name": "password_strength_meter",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":11,"length":33}}],
+      "remark": "enable参数类型错误，传参int"
+    },
+    {
+      "name": "password_strength_meter",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":7}}],
+      "remark": "enable为true，开启强密码；length参数格式正确，长度值不在范围内,length=7"
+    },
+    {
+      "name": "password_strength_meter",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":100}}],
+      "remark": "enable为true，开启强密码；length参数格式正确，长度值不在范围内,length=100"
+    }
+  ]
+}

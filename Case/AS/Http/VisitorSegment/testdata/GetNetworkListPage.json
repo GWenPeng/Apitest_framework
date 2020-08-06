@@ -1,0 +1,268 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "param": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": -2,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 0,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":1
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit":2,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":2
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 3,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":3
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 4,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":4
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 5,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":4
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": -2,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": 0,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": 1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":1
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": 2,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":2
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": 3,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":3
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param":  {"offset": 1,"limit": 4,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":3
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": -2,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": 0,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": 1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":1
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": 2,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":2
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": 3,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":2
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 2,"limit": 4,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":2
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 3,"limit": -1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 3,"limit": 3,"key_word": ""},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 4,
+          "data.index":1
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": -1,"limit": 3,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["offset"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": -1,"limit": 1,"key_word": ""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["offset"]}
+        }
+      }
+
+    ]
+}

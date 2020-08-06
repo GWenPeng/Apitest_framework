@@ -1,0 +1,246 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "split_url": "",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?limit=1000&key_word",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+       {   "url": "/api/policy-management/v1/user-login/network-restriction/network//accessor?key_word=&offset=0&limit=1000",
+         "split_url": null,
+          "checkpoint": {
+            "status_code": 404,
+            "code": 404013000,
+            "message": "Resource not found.",
+            "cause": "",
+            "detail": {"notfound_params": ["id"]}
+        }
+      },
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/true/accessor?key_word=&offset=0&limit=1000",
+         "split_url": null,
+          "checkpoint": {
+            "status_code": 404,
+            "code": 404013000,
+            "message": "Resource not found.",
+            "cause": "",
+            "detail": {"notfound_params": ["id"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/34/accessor?key_word=&offset=0&limit=1000",
+         "split_url": null,
+          "checkpoint": {
+            "status_code": 404,
+            "code": 404013000,
+            "message": "Resource not found.",
+            "cause": "",
+            "detail": {"notfound_params": ["id"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/34.56/accessor?key_word=&offset=0&limit=1000",
+         "split_url": null,
+          "checkpoint": {
+            "status_code": 404,
+            "code": 404013000,
+            "message": "Resource not found.",
+            "cause": "",
+            "detail": {"notfound_params": ["id"]}
+        }
+      },
+
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=2.32&limit=1000",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["offset"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=false&limit=1000",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["offset"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=\"string\"&limit=1000",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["offset"]}
+        }
+      },
+
+
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=true",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=34.34",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=\"string\"",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["limit"]}
+        }
+      },
+
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=699&offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=20.22&offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=false&offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/null/accessor?key_word=&offset=0&limit=1000",
+         "split_url": null,
+          "checkpoint": {
+            "status_code": 404,
+            "code": 404013000,
+            "message": "Resource not found.",
+            "cause": "",
+            "detail": {"notfound_params": ["id"]}
+        }
+      },
+
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=null&limit=1000",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["offset"]}
+        }
+      },
+
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=null",
+          "checkpoint": {
+            "status_code": 400,
+            "code": 400000000,
+            "message": "Invalid request.",
+            "cause": "",
+            "detail": {"invalid_params": ["limit"]}
+        }
+      },
+
+
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=&offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+      {   "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "split_url": "/accessor?key_word=null&offset=0&limit=1000",
+          "checkpoint": {
+            "status_code": 200,
+            "count":0,
+            "data": []
+        }
+      },
+
+
+       {   "url": "/api/policy-management/v1/user-login/network-restriction/network/9ea09cd1-1431-4daa-84c0-8d40a9499d0d/accessor?key_word=&offset=0&limit=1000",
+         "split_url": null,
+          "checkpoint": {
+            "status_code": 404,
+            "code": 404013000,
+            "message": "Resource not found.",
+            "cause": "",
+            "detail": {"notfound_params": ["id"]}
+        }
+      }
+    ]
+}

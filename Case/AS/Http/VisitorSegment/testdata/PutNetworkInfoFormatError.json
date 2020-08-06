@@ -1,0 +1,607 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"10/2/176/245","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"10_2_176_245","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"9.2.176.222","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"10.255.255.256","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"172.15.0.255","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"172.31.255.256","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"192.167.0.0","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"192.168.255.256","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"126.255.255.255","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"127.255.255.257","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"127.256.255.221","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"256.222.255.221","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"222.222.256.221","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"0.0.0.0","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"255.255.255.255","end_ip":"255.255.255.255","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+
+
+
+
+
+
+
+
+
+
+
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"10/2/176/245","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"10_2_176_245","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"9.2.176.222","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"10.255.255.256","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"172.15.0.255","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"172.31.255.256","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"192.167.0.0","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"192.168.255.256","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"126.255.255.255","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"127.255.255.257","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"127.256.255.221","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"256.222.255.221","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"222.222.256.221","start_ip":"1.1.1.1","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"0.0.0.0","start_ip":"0.0.0.0","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","end_ip":"255.255.255.255","start_ip":"255.255.255.255","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+
+
+
+
+    {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"10/2/176/245","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"10_2_176_245","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"9.2.176.222","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"10.255.255.256","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"172.15.0.255","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"172.31.255.256","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"192.167.0.0","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"192.168.255.256","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"126.255.255.255","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"127.255.255.257","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"127.256.255.221","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"256.222.255.221","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"222.222.256.221","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"0.0.0.0","start_ip":"1.1.1.1","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","ip_address":"255.255.255.255","start_ip":"255.255.255.255","end_ip":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+
+
+    {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"10/2/176/245","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"10_2_176_245","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"9.2.176.222","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"10.255.255.256","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"172.15.0.255","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"172.31.255.256","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"192.167.0.0","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+         "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"192.168.255.256","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"126.255.255.255","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"127.255.255.257","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"127.256.255.221","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"256.222.255.221","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"222.222.256.221","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"0.0.0.0","start_ip":"1.1.1.1","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","netmask":"255.255.255.255","start_ip":"255.255.255.255","end_ip":"10.2.54.1","ip_address":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      }
+
+    ]
+}

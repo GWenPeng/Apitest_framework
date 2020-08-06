@@ -1,0 +1,17 @@
+{
+    "url": "/api/document-domain-management/v1/domain/self",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "params": null,
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/self",
+        "checkpoint": {
+          "status_code": 200,
+          "type": "parallel",
+          "host": null
+        }
+      }
+
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":12}}],\"name\":\"这是一个策略\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"this is a strategy\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"111\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"~!%#$@-_.\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"~!%#$@-_.策略A\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"策略A~!%#$@-_.\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"中文~!%#$@-_. sss1111\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":12}}],\"name\":\"precondition\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":12}},{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":False,\"image_vcode\":False,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"precondition\"}"
+    },
+    {
+      "jsondata": "{\"content\":[],\"name\":\"precondition\"}"
+    }
+  ]
+}

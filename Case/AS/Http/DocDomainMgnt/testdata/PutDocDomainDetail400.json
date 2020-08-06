@@ -1,0 +1,238 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "domaintype": "child",
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":0,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "0 is less than the minimum of 1",
+          "detail.invalid_params": 0
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":1,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400014205,
+          "message": "Linked failed",
+          "cause": "Connection refused"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":65535,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400014205,
+          "message": "Linked failed",
+          "cause": "Connection refused"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":65536,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "65536 is greater than the maximum of 65535",
+          "detail.invalid_params": 65536
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parent","port":443,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":123,"port":443,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":true,"port":443,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":"34.45","credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":34.45,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":45354353,"credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":"admin","credential_key":2324432},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":"34.66","credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'34.66' is not of type 'integer'",
+          "detail.invalid_params": "34.66"
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":99.66,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":443,"credential_id":3234353254,"credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "3234353254 is not of type 'string'",
+          "detail.invalid_params": 3234353254
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":443,"credential_id":"admin","credential_key":23243224},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "23243224 is not of type 'string'",
+          "detail.invalid_params": 23243224
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret": 342432},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "342432 is not of type 'string'",
+          "detail.invalid_params": 342432
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret": false},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "False is not of type 'string'",
+          "detail.invalid_params": false
+        }
+      },
+      {
+        "domaintype": "parallel",
+        "jsondata": {"type":"parallel","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret": 23.45},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "23.45 is not of type 'string'",
+          "detail.invalid_params": 23.45
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":null,"port":443,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid type",
+          "detail.invalid_params": null
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":null,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'integer'",
+          "detail.invalid_params": null
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":null,"credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'",
+          "detail.invalid_params": null
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":"admin","credential_key":null},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'",
+          "detail.invalid_params": null
+        }
+      },
+      { "domaintype": "parallel",
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","port":null,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'integer'",
+          "detail.invalid_params": null
+        }
+      },
+      { "domaintype": "parallel",
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","port":null,"credential_id":"admin","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'integer'",
+          "detail.invalid_params": null
+        }
+      },
+      { "domaintype": "parallel",
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","port":443,"credential_id":null,"credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'",
+          "detail.invalid_params": null
+        }
+      },
+      { "domaintype": "parallel",
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","port":443,"credential_id":"admin","credential_key":null},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'",
+          "detail.invalid_params": null
+        }
+      },
+      { "domaintype": "parallel",
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret": null},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "None is not of type 'string'",
+          "detail.invalid_params": null
+        }
+      }
+    ]
+}

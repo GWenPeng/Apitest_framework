@@ -1,0 +1,45 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 201,
+    "code": 400001,
+    "message": "invalid name"
+
+  },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"this is not exist policy\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"和现有6项不匹配\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"name\":\"缺少content\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\"}],\"name\":\"content缺少value\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":1111,\"name\":\"content类型错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}

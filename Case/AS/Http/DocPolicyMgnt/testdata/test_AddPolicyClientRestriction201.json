@@ -1,0 +1,62 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"demo\"}",
+   "checkpoint": {
+        "status_code": 201
+      },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"ID5316-1\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":True,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"ID5316-2\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":True,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"ID5316-3\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":True,\"pc_web\":False,\"windows\":False}}],\"name\":\"ID5316-4\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":True,\"windows\":False}}],\"name\":\"ID5316-5\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":True}}],\"name\":\"ID5316-6\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":True}}],\"name\":\"ID5316-7\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":True,\"mac\":True,\"mobile_web\":True,\"pc_web\":True,\"windows\":True}}],\"name\":\"ID5316-8\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"ID5316-9\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    }
+  ]
+}

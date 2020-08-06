@@ -1,0 +1,52 @@
+{
+  "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+  "number": 888,
+  "remark": "xx",
+  "args": [
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":false,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "number": 4,
+      "remark": "限制安卓登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":false,"ios":true,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "number": 2,
+      "remark": "限制IOS登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":false,"ios":false,"mac":true,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "number": 32,
+      "remark": "限制MAC登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":false,"ios":false,"mac":false,"mobile_web":true,"pc_web":false,"windows":false}}],
+      "number": 128,
+      "remark": "限制移动web登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":false,"ios":false,"mac":false,"mobile_web":false,"pc_web":true,"windows":false}}],
+      "number": 64,
+      "remark": "限制pc-web登录"
+    },
+   {
+      "jsondata": [{"name":"client_restriction","value":{"android":false,"ios":false,"mac":false,"mobile_web":false,"pc_web":false,"windows":true}}],
+      "number": 16,
+      "remark": "限制pc客户端登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":false,"mac":false,"mobile_web":false,"pc_web":false,"windows":true}}],
+      "number": 20,
+      "remark": "限制安卓和PC客户端登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":true,"ios":true,"mac":true,"mobile_web":true,"pc_web":true,"windows":true}}],
+      "number": 246,
+      "remark": "限制全部客户端登录"
+    },
+    {
+      "jsondata": [{"name":"client_restriction","value":{"android":false,"ios":false,"mac":false,"mobile_web":false,"pc_web":false,"windows":false}}],
+      "number": 0,
+      "remark": "取消限制全部客户端登录"
+    }
+  ]
+}

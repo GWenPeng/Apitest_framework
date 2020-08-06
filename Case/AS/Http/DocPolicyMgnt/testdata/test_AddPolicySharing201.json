@@ -1,0 +1,32 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":True,\"http\":True}}],\"name\":\"demo\"}",
+  "checkpoint": {
+        "status_code": 201
+      },
+  "args": [
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":True,\"http\":True}}],\"name\":\"ID5320-1\"}",
+        "checkpoint": {
+          "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":True,\"http\":False}}],\"name\":\"ID5320-2\"}",
+        "checkpoint": {
+          "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":False,\"http\":True}}],\"name\":\"ID5320-3\"}",
+        "checkpoint": {
+          "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":False,\"http\":False}}],\"name\":\"ID5320-4\"}",
+        "checkpoint": {
+          "status_code": 201
+      }
+    }
+  ]
+}

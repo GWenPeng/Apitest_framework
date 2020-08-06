@@ -1,0 +1,41 @@
+{
+  "configuration": "/api/policy-mgnt/v1/general/",
+  "addpolicy": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}",
+  "jsondata": {"locked": true},
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 400
+  },
+  "args": [
+    {
+      "configuration": "client_restriction",
+      "addpolicy": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":True,\"windows\":False}}],\"name\":\"这是一个策略\"}",
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "configuration": "multi_factor_auth",
+      "addpolicy":"{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":5,\"sms_vcode\":False}}],\"name\":\"这是一个策略\"}",
+      "jsondata": "[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "configuration": "password_strength_meter",
+      "addpolicy":"{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":10}}],\"name\":\"这是一个策略\"}",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request"
+      }
+    }
+  ]
+}

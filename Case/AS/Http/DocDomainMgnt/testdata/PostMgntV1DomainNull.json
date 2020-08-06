@@ -1,0 +1,91 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "{\"host\":\"10.2.176.208\",\"port\":443,\"type\":\"child\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"host\":\"10.2.180.162\",\"port\":443,\"type\":\"parallel\",\"credential_id\":None,\"credential_key\":None,\"secret\":None,\"network_type\":\"direct\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "respheaders.Location": "/api/document-domain-management/v1/domain/"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"host\":\"10.2.180.162\",\"port\":443,\"type\":\"parallel\",\"credential_id\":None,\"credential_key\":\"eisoo.com\",\"secret\":\"secretadmin\",\"network_type\":\"direct\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "respheaders.Location": "/api/document-domain-management/v1/domain/"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"host\":\"10.2.180.162\",\"port\":443,\"type\":\"parallel\",\"credential_id\":\"admin\",\"credential_key\":None,\"secret\":\"secretadmin\",\"network_type\":\"direct\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "respheaders.Location": "/api/document-domain-management/v1/domain/"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"host\":\"10.2.180.162\",\"port\":443,\"type\":\"parallel\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\",\"secret\":None,\"network_type\":\"direct\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "respheaders.Location": "/api/document-domain-management/v1/domain/"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":"10.2.180.162","port":443,"type":null,"credential_id":"admin","credential_key":"eisoo.com","secret":"sercret","network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":null,"port":443,"type":"child","credential_id":"admin","credential_key":"eisoo.com","network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":"10.2.180.162","port":443,"type":"child","credential_id":null,"credential_key":"eisoo.com","network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":"10.2.180.162","port":443,"type":"child","credential_id":"admin","credential_key":null,"network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":"10.2.180.162","port":null,"type":"child","credential_id":"admin","credential_key":"eisoo.com","network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+        {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":null,"port":443,"type":"parallel","credential_id":"admin","credential_key":"eisoo.com","network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+       {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"host":"10.2.180.162","port":null,"type":"parallel","credential_id":"admin","credential_key":"eisoo.com","network_type":"direct"},
+        "checkpoint": {
+          "status_code": 400
+
+        }
+      }
+
+    ]
+}

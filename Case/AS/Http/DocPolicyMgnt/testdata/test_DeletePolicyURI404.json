@@ -1,0 +1,19 @@
+{
+  "error_url": "/api/doc-domain/v1/policy-tpl/{id}",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 400,
+    "code": 400000,
+    "message": "Invalid request."
+  },
+  "args": [
+    {
+      "error_url": "/api/doc-domain/v1/policy-tpl/111",
+      "checkpoint": {
+        "status_code": 404,
+        "code": 404000,
+        "message": "Resource not found."
+      }
+    }
+  ]
+}

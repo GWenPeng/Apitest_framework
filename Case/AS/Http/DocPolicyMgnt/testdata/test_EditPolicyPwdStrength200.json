@@ -1,0 +1,21 @@
+{
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":8}}],\"name\":\"密码长度为8\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":50}}],\"name\":\"密码长度为50\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":99}}],\"name\":\"密码长度为99\"}"
+    },
+    {
+      "jsondata": "{\"content\":[],\"name\":\"启用策略但不配置内容\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":False,\"image_vcode\":False,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"更改策略为双因子\"}"
+    }
+  ]
+}

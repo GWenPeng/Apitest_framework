@@ -1,0 +1,216 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "jsondata": {"start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "jsondata": {"name":"name","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["start_ip"]}
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["end_ip"]}
+        }
+      },
+      {
+
+        "jsondata": {"name":"name","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["ip_address"]}
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["netmask"]}
+        }
+      },
+      {
+        "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["net_type"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["start_ip"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":null,"end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["start_ip"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["end_ip"]}
+        }
+      },
+       { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":null,"ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["end_ip"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["ip_address"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":null,"netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["ip_address"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["netmask"]}
+        }
+      },
+       { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":null,"net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["netmask"]}
+        }
+      },
+       { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":""},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["net_type"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":null},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "detail":{"invalid_params": ["net_type"]}
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":null,"end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":"","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":null,"start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":null,"ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":null,"netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+       { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      },
+      { "jsondata": {"name":"name","start_ip":"11.12.13.14","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":null,"net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200
+        }
+      }
+
+    ]
+}

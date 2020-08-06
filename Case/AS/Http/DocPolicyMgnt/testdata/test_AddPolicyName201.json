@@ -1,0 +1,182 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+        "status_code": 201
+      },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"这是一个策略\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"this is a strategy\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"~111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111~\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"!111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111!\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"%111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111%\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"#111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111#\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"$111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111$\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"@111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111@\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"-111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111-\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"_111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111_\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\".111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111.\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"       111\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"111       \"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"11                 11\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"这是1个strategy~!%#$@-_. \"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"策略A\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}},{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":False,\"image_vcode\":False,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"策略A\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}},{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":False,\"image_vcode\":False,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}},{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}},{\"name\":\"user_document\",\"value\":{\"create\":False,\"size\":5}},{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":False,\"http\":True}}],\"name\":\"策略A\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[],\"name\":\"策略A\"}",
+      "checkpoint": {
+        "status_code": 201
+      }
+    }
+  ]
+}

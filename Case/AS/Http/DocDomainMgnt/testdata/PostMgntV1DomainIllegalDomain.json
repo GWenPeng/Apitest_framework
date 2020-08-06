@@ -1,0 +1,54 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "{\"host\":\"10.2.176.208\",\"port\":443,\"type\":\"child\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"%%$","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid host"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"2c","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400014205,
+          "Linked failed": "Linked failed",
+          "cause": "Name or service not known"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"aaaaaa4543534gfdgfdgfdgfd.hjdhsajdsjadhjahd324fdghfdjjsahjdhsajdhadasdsadsadsadasdsadhdfjshe34344.com","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid host"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.176","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400014205,
+          "Linked failed": "Linked failed",
+          "cause": "Connection timed out"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10/2/176/202","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid host"
+        }
+      }
+
+
+    ]
+}

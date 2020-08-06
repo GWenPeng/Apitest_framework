@@ -1,0 +1,88 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"port":443,"credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Missing required body params: ['type']."
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'port' is a required property"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'credential_id' is a required property"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":"admin8001"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'credential_key' is a required property"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'port' is a required property"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"","port":443,"credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid type"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":"","credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'' is not of type 'integer'"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":"","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'' is too short"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","port":443,"credential_id":"admin8001","credential_key":""},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'' is too short"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parallel","port":"","credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "'' is not of type 'integer'"
+        }
+      }
+    ]
+}

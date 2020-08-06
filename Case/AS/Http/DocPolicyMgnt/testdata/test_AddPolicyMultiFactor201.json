@@ -1,0 +1,44 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"demo\"}",
+   "checkpoint": {
+        "status_code": 201
+      },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"ID5317-1\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":50,\"sms_vcode\":False}}],\"name\":\"ID5317-2\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":99,\"sms_vcode\":False}}],\"name\":\"ID5317-3\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":False,\"otp\":True,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"ID5317-4\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":False,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":True}}],\"name\":\"ID5317-5\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":False,\"image_vcode\":False,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":True}}],\"name\":\"ID5317-6\"}",
+       "checkpoint": {
+        "status_code": 201
+      }
+    }
+  ]
+}

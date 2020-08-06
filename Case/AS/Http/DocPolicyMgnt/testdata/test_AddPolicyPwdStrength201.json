@@ -1,0 +1,32 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+        "status_code": 201
+    },
+  "args": [
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":8}}],\"name\":\"ID5318-1\"}",
+        "checkpoint": {
+          "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":50}}],\"name\":\"ID5318-2\"}",
+          "checkpoint": {
+            "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":99}}],\"name\":\"ID5318-3\"}",
+        "checkpoint": {
+            "status_code": 201
+      }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"ID5318-4\"}",
+        "checkpoint": {
+            "status_code": 201
+      }
+    }
+  ]
+}

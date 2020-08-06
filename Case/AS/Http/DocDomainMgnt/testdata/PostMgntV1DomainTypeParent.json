@@ -1,0 +1,34 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "{\"host\":\"10.2.176.208\",\"port\":443,\"type\":\"child\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"parent","host":"10.2.180.162","port":443,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "Invalid type"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":0,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "0 is less than the minimum of 1"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": {"type":"child","host":"10.2.180.162","port":65536,"credential_id":"admin","credential_key":"eisoo.com","secret":"secrect"},
+        "checkpoint": {
+          "status_code": 400,
+          "cause": "65536 is greater than the maximum of 65535"
+        }
+      }
+
+
+    ]
+}

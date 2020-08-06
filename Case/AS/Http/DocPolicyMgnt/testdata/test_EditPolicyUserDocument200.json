@@ -1,0 +1,21 @@
+{
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":8}}],\"name\":\"开启8G\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":20000}}],\"name\":\"开启2000G\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":1.25}}],\"name\":\"开启1.25G\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":True,\"size\":5.975}}],\"name\":\"开启5.975G\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"user_document\",\"value\":{\"create\":False,\"size\":8}}],\"name\":\"不启用8G\"}"
+    }
+  ]
+}

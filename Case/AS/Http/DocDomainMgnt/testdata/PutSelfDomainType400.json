@@ -1,0 +1,134 @@
+{
+    "url": "/api/document-domain-management/v1/domain/self/type",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata":{"type": "parallel", "host": "10.2.176.245"},
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": "parent", "host": "10.2.176.202"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": "parent", "host": ""},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": "parallel", "host": 23},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": "parallel", "host": null},
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": "parallel", "host": true},
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": null, "host": ""},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": 12.3, "host": ""},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"type": true, "host": ""},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+       {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"host":"" , "type": "child"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+       {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"host":"$##.%&.**" , "type": "child"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+       {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"host":20 , "type": "child"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"host":"10.2.176.202" , "type": ""},
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {  "type": "child"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {  "type": "parallel"},
+        "checkpoint": {
+          "status_code": 400
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"host":"10.2.176.202" },
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {"host":"" },
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+      ,
+      {
+        "url": "/api/document-domain-management/v1/domain/self/type",
+        "jsondata": {},
+        "checkpoint": {
+          "status_code": 400
+        }
+      }
+
+    ]
+}

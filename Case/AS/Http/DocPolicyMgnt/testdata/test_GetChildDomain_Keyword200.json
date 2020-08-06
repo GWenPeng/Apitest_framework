@@ -1,0 +1,216 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl/",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"20\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "params": "{\"key_word\":\"\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\" \",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"2\",\"offset\":\"0\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"-2\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"1\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"1\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"3\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\" \",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"null\",\"limit\":\"20\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    }
+
+    ,
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"20\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"-1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"10\",\"limit\":\"-1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"200\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"201\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\" \"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"null\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+
+
+
+
+
+
+    {
+      "params": "{\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"key_word\":\"1\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"不存在匹配关键字\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"爱数\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"  爱数\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"爱数   \",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"爱   数\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"1\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"domain.com\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"eisoo@\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"eisoo@!@.com\",\"offset\":\"0\",\"limit\":\"1\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    }
+  ]
+}

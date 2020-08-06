@@ -1,0 +1,188 @@
+{
+    "url": "/api/document-domain-management/v1/domain",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "params": "{\"key_word\": \"\", \"offset\": None, \"limit\": None}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 0, \"limit\": -1}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 0, \"limit\": 0}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 0, \"limit\": 1}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 1,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 0, \"limit\": 2}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 2,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 0, \"limit\": 3}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 3,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 0, \"limit\": 4}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 3,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 1, \"limit\": -1}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 1, \"limit\": 0}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 1, \"limit\": 1}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 1,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 1, \"limit\": 2}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 2,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 1, \"limit\": 3}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 2,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 2, \"limit\": -1}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 2, \"limit\": 0}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 2, \"limit\": 1}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 1,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 2, \"limit\": 2}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 1,
+          "count": 3
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 3, \"limit\": -1}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 3, \"limit\": 0}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request.",
+          "cause": "",
+          "detail": {"invalid_params": ["limit"]}
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "params": "{\"key_word\": \"\", \"offset\": 3, \"limit\": 1}",
+        "checkpoint": {
+          "status_code": 200,
+          "data": 0,
+          "count": 3
+        }
+      }
+
+
+    ]
+}

@@ -1,0 +1,82 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl/",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"20\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "params": "{\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\" \",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"null\",\"key_word\":\"1\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"关键字无法匹配\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"策略\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"  111\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"1  11\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"111  \",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"1\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"this\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"@\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "params": "{\"key_word\":\"strategy~!%#\",\"limit\":\"20\",\"offset\":\"0\"}",
+      "checkpoint": {
+        "status_code": 200
+      }
+    }
+  ]
+}

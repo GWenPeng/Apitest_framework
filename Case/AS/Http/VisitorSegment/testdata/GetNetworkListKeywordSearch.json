@@ -1,0 +1,71 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "param": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1000,"key_word": "zhang"},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 2,
+          "data.len": 2,
+          "data.0.start_ip":"10.2.182.1",
+          "data.1.start_ip":"10.2.181.1"
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1000,"key_word": "zhang12"},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 0,
+          "data.len":0
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1000,"key_word": "10.2.181.1"},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 1,
+          "data.len":1,
+          "data.0.start_ip":"10.2.181.1"
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1000,"key_word": "10.2"},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 2,
+          "data.len":2,
+          "data.0.start_ip":"10.2.182.1",
+          "data.1.start_ip":"10.2.181.1"
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1000,"key_word": "10"},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 3,
+          "data.len":3,
+          "data.0.start_ip":"13.2.183.1",
+          "data.1.start_ip":"10.2.182.1",
+          "data.2.start_ip":"10.2.181.1"
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "param": {"offset": 0,"limit": 1000,"key_word": "10.2.189.45"},
+        "checkpoint": {
+          "status_code": 200,
+          "count": 0,
+          "data.len":0
+        }
+      }
+
+    ]
+}

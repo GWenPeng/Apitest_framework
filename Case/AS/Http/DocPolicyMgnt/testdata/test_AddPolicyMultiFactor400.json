@@ -1,0 +1,109 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 201,
+    "code": 400001,
+    "message": "invalid name"
+
+  },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"缺少image配置项\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":111,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"enable格式错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":111,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"image格式错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":111,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"otp格式错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":True,\"sms_vcode\":False}}],\"name\":\"error_count格式错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":-1,\"sms_vcode\":False}}],\"name\":\"error_count为-1\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":100,\"sms_vcode\":False}}],\"name\":\"error_count为100\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":111}}],\"name\":\"sms格式错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":True,\"password_error_count\":0,\"sms_vcode\":False}}],\"name\":\"同时开启图形和动态密码\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":False,\"password_error_count\":0,\"sms_vcode\":True}}],\"name\":\"同时开启图形和短信验证码\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":False,\"otp\":True,\"password_error_count\":0,\"sms_vcode\":True}}],\"name\":\"同时开启短信和短信验证码\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":True,\"image_vcode\":True,\"otp\":True,\"password_error_count\":0,\"sms_vcode\":True}}],\"name\":\"同时全部开启\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}

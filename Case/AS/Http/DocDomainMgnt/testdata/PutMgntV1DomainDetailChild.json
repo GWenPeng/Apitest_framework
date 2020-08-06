@@ -1,0 +1,55 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"child\",\"port\":443,\"credential_id\":\"admin8001\",\"credential_key\":\"eisoo.com\"}",
+        "checkpoint": {
+          "status_code": 401,
+          "code": 401014201,
+          "message": "Invalid client",
+          "cause": "invalid_client"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"child\",\"port\":443,\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com123\"}",
+        "checkpoint": {
+           "status_code": 401,
+          "code": 401014201,
+          "message": "Invalid client",
+          "cause": "invalid_client"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"child\",\"port\":8080,\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400014205,
+          "message": "Linked failed"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"child\",\"port\":8080,\"credential_id\":\"admin123\",\"credential_key\":\"eisoo.com12345\"}",
+        "checkpoint": {
+          "status_code": 401,
+          "code": 401014201,
+          "message": "Invalid client",
+          "cause": "invalid_client"
+        }
+      },
+      {
+        "url": "/api/document-domain-management/v1/domain/",
+        "jsondata": "{\"type\":\"child\",\"port\":443,\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+        "checkpoint": {
+          "status_code": 200
+        }
+      }
+
+    ]
+}

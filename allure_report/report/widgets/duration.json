@@ -1,0 +1,11 @@
+[ {
+  "uid" : "660a4f36d90c829c",
+  "name" : "test_flaky_case",
+  "time" : {
+    "start" : 1593312027494,
+    "stop" : 1593312027494,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

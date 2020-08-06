@@ -1,0 +1,11 @@
+{
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":22}}],\"name\":\"policy1\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":33}}],\"name\":\"policy1\"}"
+    }
+  ]
+}

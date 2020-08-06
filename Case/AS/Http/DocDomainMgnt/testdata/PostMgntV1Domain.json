@@ -1,0 +1,16 @@
+{
+    "url": "/api/document-domain-management/v1/domain",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "{\"host\":\"10.2.176.208\",\"port\":443,\"type\":\"child\",\"credential_id\":\"admin\",\"credential_key\":\"eisoo.com\"}",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain",
+        "checkpoint": {
+          "status_code": 201,
+          "respheaders.Location": "/api/document-domain-management/v1/domain/ + uuid"
+        }
+      }
+
+    ]
+}

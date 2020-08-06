@@ -1,0 +1,35 @@
+{
+  "url": "/api/policy-management/v1/general/password_strength_meter/value",
+  "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":18}}]",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "checkpoint": {
+    "status_code": 200,
+    "strong_pwd_length": 11,
+    "strogh_pwd_status": 22
+  },
+  "args": [
+    {
+      "url": "/api/policy-management/v1/general/password_strength_meter/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":8}}]",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/password_strength_meter,multi_factor_auth/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":50}},{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}}]",
+      "checkpoint": {
+        "status_code": 200
+      }
+    },
+    {
+      "url": "/api/policy-management/v1/general/password_strength_meter,multi_factor_auth,client_restriction,user_document,user_document_sharing/value",
+      "jsondata": "[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":true,\"length\":99}},{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}},{\"name\":\"multi_factor_auth\",\"value\":{\"enable\":true,\"image_vcode\":true,\"otp\":false,\"password_error_count\":0,\"sms_vcode\":false}},{\"name\":\"user_document\",\"value\":{\"create\":false,\"size\":18}},{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":false,\"http\":true}}]",
+      "checkpoint": {
+        "status_code": 200
+      }
+    }
+  ]
+}
+
+

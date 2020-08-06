@@ -1,0 +1,214 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl/",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"20\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "params": {"key_word":" ","limit":"20","offset":"'2222'"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset参数类型不正确"
+      }
+    },
+    {
+      "params": {"key_word":" ","limit":"20","offset":1.5},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=1.5"
+      }
+    },
+    {
+      "params": {"key_word":" ","limit":"20","offset":"起始下标"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=起始下标"
+      }
+    },
+    {
+      "params": {"key_word":" ","limit":"20","offset":"offset"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=offset"
+      }
+    },
+    {
+      "params": {"key_word":" ","limit":"20","offset":"@"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=@"
+      }
+    },
+    {
+      "params": {"key_word":" ","offset":"'                '","limit":"20"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset放中间，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"key_word":"策略","limit":"20","offset":"'              '"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset放末尾，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"key_word":"  111","limit":"20","offset":"null"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=null"
+      }
+    },
+      {
+      "params": {"key_word":"  111","limit":"20","offset":-5},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset<0"
+      }
+    },
+
+
+
+
+
+
+    {
+      "params": {"key_word":"","limit":"'20'","offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit格式不正确"
+      }
+    },
+    {
+      "params": {"key_word":" 111","limit":1.5,"offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=1.5"
+      }
+    },
+    {
+      "params": {"key_word":"","limit":"获取量","offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit为中文"
+      }
+    },
+    {
+      "params": {"key_word":"","limit":"limit","offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit为英文"
+      }
+    },
+    {
+      "params": {"key_word":"","limit":"@","offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit为特殊符号"
+      }
+    },
+    {
+      "params": {"key_word":"","limit":"21是@S","offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit为混合字符21是@S"
+      }
+    },
+    {
+      "params": {"key_word":"111 ","limit":"'   '","offset":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark":"limit放中间，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"key_word":"  111","offset":"0","limit":"'   '"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark":"limit放末尾，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"key_word":"  111","offset":"0","limit":"null"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=null"
+        }
+      },
+    {
+      "params": {"key_word":"  111","offset":"0","limit":"0"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark":"limit=0"
+      }
+    },
+    {
+      "params": {"key_word":"  111","offset":"0","limit":"-1"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark":"limit=-1"
+      }
+    },
+    {
+      "params": {"key_word":"  111","offset":"0","limit":"-10"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark":"limit=-10"
+      }
+    },
+    {
+      "params": {"key_word":"  111","offset":"0","limit":"1001"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark":"limit=1001"
+      }
+    }
+  ]
+}

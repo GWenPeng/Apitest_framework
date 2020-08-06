@@ -1,0 +1,64 @@
+{
+    "url": "",
+    "header": {"Content-Type":"application/json"},
+    "method": "GET",
+    "params": "",
+    "data": "",
+    "json": "",
+    "remark": "",
+    "args": [
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network?limit=1000&offset=0&key_word=",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "网段列表查询接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network",
+        "header": {"Content-Type":"application/json"},
+        "method": "POST",
+        "json": {"name":"na223m1e122","start_ip":"192.18.12.145","end_ip":"192.168.2.113","ip_address":"10.2.11.131","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "remark": "网段新增接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/public-net",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "获取网段信息"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/66f9041a-8de3-41b6-a2f7-d4f316972796",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "获取网段信息2"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/b687fca6-42ef-4114-bc07-4e02a3ea2440",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT",
+        "json": {"end_ip":"12.133.14.121","ip_address":"10.2.54.11","name":"namereat","net_type":"ip_mask","netmask":"255.255.252.0","start_ip":"11.13.12.171"},
+        "remark": "网段修改接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/41c89959-72eb-4a3e-94ea-768ac8c37b06",
+        "header": {"Content-Type":"application/json"},
+        "method": "DELETE",
+        "remark": "网段删除接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/592a5197-0e9e-4187-b9ac-99065ee27c44/accessor?key_word=&offset=0&limit=1000",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "访问者列表查询接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/c0feb6bc-2f66-4565-affa-b8238ab1c076/accessor/266c6a42-6131-4d62-8f39-853e7093701c",
+        "header": {"Content-Type":"application/json"},
+        "method": "DELETE",
+        "remark": "访问者删除接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/network/66f9041a-8de3-41b6-a2f7-d4f316972796/accessor",
+        "header": {"Content-Type":"application/json"},
+        "method": "POST",
+        "json": [{"accessor_id":"266c6a42-6131-4d62-8f39-853e7093701c","accessor_type":"user"},{"accessor_id":"151bcb65-48ce-4b62-973f-0bb6685f9cb8","accessor_type":"department"}],
+        "remark": "访问者新增接口"
+      },
+      { "url": "/api/policy-management/v1/user-login/network-restriction/accessor/266c6a42-6131-4d62-8f39-853e7093701c/network?offset=0&limit=1000",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "获取访问者已绑定的网段接口"
+      }
+    ]
+}

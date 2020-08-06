@@ -1,0 +1,42 @@
+{
+  "name":"xx",
+  "jsondata": {},
+  "remark": "string",
+  "args": [
+    {
+      "name":"111",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name不在已有的6项中，传参为数字"
+    },
+    {
+      "name":"中中中",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name不在已有的6项中，传参为中文"
+    },
+    {
+      "name":"sss",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name不在已有的6项中，传参为英文"
+    },
+    {
+      "name":"@@@",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name不在已有的6项中，传参为特殊字符"
+    },
+    {
+      "name":"@1s是",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name不在已有的6项中，传参为混合字符"
+    },
+    {
+      "name":"client_restriction",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name中传参存在，在已有6项中，但和body中不对应"
+    },
+    {
+      "name":"password_strength_meter,client_restriction",
+      "jsondata": [{"name":"password_strength_meter","value":{"enable":true,"length":8}}],
+      "remark": "name中传参存在，在已有6项中，但和body中不完全对应"
+    }
+  ]
+}

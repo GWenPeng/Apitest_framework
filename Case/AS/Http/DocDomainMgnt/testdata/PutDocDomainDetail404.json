@@ -1,0 +1,18 @@
+{
+    "url": "/api/document-domain-management/v1/domain/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/document-domain-management/v1/domain/a1157502-0c15-4c951-850a-c8d11f6236a0",
+        "jsondata": {"type":"child","port":443,"credential_id":"admin8001","credential_key":"eisoo.com"},
+        "checkpoint": {
+          "status_code": 404,
+          "cause": "domain_id does not exist",
+          "detail.notfound_resource": "a1157502-0c15-4c951-850a-c8d11f6236a0"
+        }
+      }
+
+    ]
+}

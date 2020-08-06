@@ -1,0 +1,27 @@
+{
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":false,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}],\"name\":\"demo\"}",
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":True,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"改为限制安卓和IOS登录\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":True,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"改为限制MAC登录\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":True,\"pc_web\":False,\"windows\":False}}],\"name\":\"改为限制mobile_web登录\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":True,\"windows\":False}}],\"name\":\"改为限制pc_web登录\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":True}}],\"name\":\"改为限制windows登录\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":True,\"mac\":True,\"mobile_web\":True,\"pc_web\":True,\"windows\":True}}],\"name\":\"改为限制全部终端登录\"}"
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"client_restriction\",\"value\":{\"android\":False,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"启用但无终端登录限制\"}"
+    }
+  ]
+}

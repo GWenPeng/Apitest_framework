@@ -1,0 +1,60 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":True,\"http\":True}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+  },
+  "args": [
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":True}}],\"name\":\"缺http\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":1,\"http\":False}}],\"name\":\"anyshare错误\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":\" \",\"http\":True}}],\"name\":\"anyshare为空\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":False,\"http\":1}}],\"name\":\"http错误\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":False,\"http\":\" \"}}],\"name\":\"http为空\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"user_document_sharing\",\"value\":{\"anyshare\":1,\"http\":1}}],\"name\":\"两个都错\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    }
+  ]
+}

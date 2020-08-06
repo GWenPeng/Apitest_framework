@@ -1,0 +1,123 @@
+{
+    "url": "",
+    "header": {"Content-Type":"application/json"},
+    "method": "GET",
+    "params": "",
+    "data": "",
+    "json": "",
+    "remark":"",
+    "args": [
+      { "url": "/api/document-domain-management/v1/policy-tpl",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "params": {"start":0,"limit":20,"key_word":"爱数"},
+        "remark": "搜索策略配置"
+      },
+      { "url": "/api/document-domain-management/v1/policy-tpl",
+        "header": {"Content-Type":"application/json"},
+        "method": "POST",
+        "json": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"这是一个策略\"}",
+        "remark": "新增策略配置"
+      },
+      { "url": "/api/document-domain-management/v1/policy-tpl/11111",
+        "header": {"Content-Type":"application/json"},
+        "method": "DELETE",
+        "remark": "删除策略配置"
+      },
+      { "url": "/api/document-domain-management/v1/policy-tpl/11111",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "获取文档域策略详细配置"
+      },
+      { "url": "/api/document-domain-management/v1/policy-tpl/11111",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT",
+        "remark": "编辑策略配置"
+      },
+       {"url": "/api/document-domain-management/v1/policy-tpl/11111/bound-domain",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+         "remark": "获取已绑定子文档域"
+       },
+      { "url": "/api/document-domain-management/v1/policy-tpl/11111/bound-domain/11111",
+        "header": {"Content-Type":"application/json"},
+        "method": "DELETE",
+        "remark": "解绑子文档域"
+      },
+      { "url": "/api/document-domain-management/v1/policy-tpl/11111/bound-domain/11111",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT",
+        "remark": "绑定子文档域"
+      },
+      { "url": "/api/document-domain-management/v1/policy-tpl/11111/bound-domain/11111/policy",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT",
+        "remark": "应用策略配置"
+      },
+      { "url": "/api/document-domain-management/v1/domain/11111/bound-policy-tpl",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "获取与文档域绑定的策略配置"
+      },
+      { "url": "/api/document-domain-management/v1/domain/self",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET"
+      },
+      { "url": "/api/document-domain-management/v1/domain",
+        "header": {"Content-Type":"application/json"},
+        "method": "POST"
+      },
+      { "url": "/api/document-domain-management/v1/domain/uuid",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT"
+      },
+      { "url": "/api/document-domain-management/v1/domain/ID",
+        "header": {"Content-Type":"application/json"},
+        "method": "DELETE"
+      },
+      { "url": "/api/document-domain-management/v1/domain",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET"
+      },
+
+
+      { "url": "/api/document-domain-management/v1/credential",
+        "header": {"Content-Type":"application/json"},
+        "method": "POST",
+        "remark": "新建认证凭据"
+      },
+      { "url": "/api/document-domain-management/v1/credential",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "认证凭据列表查询"
+      },
+      { "url": "/api/document-domain-management/v1/credential/111",
+        "header": {"Content-Type":"application/json"},
+        "method": "DELETE",
+        "remark": "删除认证凭据"
+      },
+      { "url": "/api/document-domain-management/v1/credential/111",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "查看指定认证凭据"
+      },
+
+
+
+      { "url": "/api/document-domain-management/v1/policy/general",
+        "header": {"Content-Type":"application/json"},
+        "method": "GET",
+        "remark": "获取策略管理服务所有策略信息"
+      },
+      { "url": "/api/document-domain-management/v1/policy/general/111/state",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT",
+        "remark": "设置策略管理服务策略状态"
+      },
+      { "url": "/api/document-domain-management/v1/policy/general/{name}/value",
+        "header": {"Content-Type":"application/json"},
+        "method": "PUT",
+        "remark": "设置策略管理服务策略内容"
+      }
+    ]
+}

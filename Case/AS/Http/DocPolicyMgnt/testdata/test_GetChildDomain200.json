@@ -1,0 +1,141 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl/",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "params": "{\"key_word\":\" \",\"offset\":\"0\",\"limit\":\"20\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "params": {"limit":6},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "无offset"
+      }
+    },
+    {
+      "params": {"offset":"","limit":6},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "offset参数为空"
+      }
+    },
+    {
+      "params": {"offset":2,"offset":7,"limit":20},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 0,
+        "remark": "传入多个offset"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":20},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "offset=0"
+      }
+    },
+    {
+      "params": {"offset":2,"limit":20},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 4,
+        "remark": "offset=2"
+      }
+    },
+    {
+      "params": {"offset":7,"limit":20},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 0,
+        "remark": "offset>总数"
+      }
+    },
+
+
+
+    {
+      "params": {"offset":0},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "缺少limit参数"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":""},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit参数为空"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":11,"limit":4},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 4,
+        "remark": "多个limit参数"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":1},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 1,
+        "remark": "limit=1"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":20},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit=20"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":200},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit=200"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":201},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit=201"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":999},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit=999"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":1000},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit=1000"
+      }
+    },
+    {
+      "params": {"offset":0,"limit":6},
+      "checkpoint": {
+        "status_code": 200,
+        "data": 6,
+        "remark": "limit匹配总数"
+      }
+    }
+  ]
+}

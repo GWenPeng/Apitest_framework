@@ -1,0 +1,7 @@
+{
+  "access_token": "03sgxWh-huVa9Y2XgpyHbXmyFgrcUma8Bffzi4hUQAM.7wSq7Z7hZw0L6tn4v51GuXaiFVnf8EgjI_uB53yobaM",
+  "expires_in": 3599,
+  "refresh_token": "WC9YUIzVwiwKt26xqMTmBGXtFbarATnY_yH6PKyXnPg.jL9LyXN2N6KN9pv0yuvCSrsmNa5fJnj_2b2zHo_sVDE",
+  "scope": "offline root_readonly manage_managed_users",
+  "token_type": "bearer"
+}

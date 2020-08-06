@@ -1,0 +1,63 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 404,
+          "body.code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": null, "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 400,
+          "body.code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_id: Invalid type. Expected: string, given: null",
+          "detail": {"invalid_params":["0.accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "add", "accessor_type": ""}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 400,
+          "body.code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_type: 0.accessor_type must be one of the following: \"user\", \"department\"",
+          "detail": {"invalid_params":["0.accessor_type"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id": "add", "accessor_type": null}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 400,
+          "body.code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_type: Invalid type. Expected: string, given: null",
+          "detail": {"invalid_params":["0.accessor_type"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": [{"accessor_id":"266c6a42-6131-4d62-8f39-853e7093701c","accessor_type":"user1"}],
+        "checkpoint": {
+          "status_code": 207,
+          "status": 400,
+          "body.code": 400000000,
+          "message": "Invalid request.",
+          "cause": "0.accessor_type: 0.accessor_type must be one of the following: \"user\", \"department\"",
+          "detail": {"invalid_params":["0.accessor_type"]}
+        }
+      }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "params":"xx",
+  "checkpoint": {},
+  "remark": "string",
+  "args": [
+    {
+      "params":{"name": "multi_factor_auth"},
+      "checkpoint": {"count": 1,"data": 1,"name": "multi_factor_auth"},
+      "remark": "查询单个策略"
+    },
+    {
+      "params":{"name": "multi_factor_auth,client_restriction"},
+      "checkpoint": {"count": 2,"data": 2,"name1": "multi_factor_auth","name2": "client_restriction"},
+      "remark": "查询多个策略"
+    },
+    {
+      "params":{"name": "multi_factor_auth,client_restriction,password_strength_meter,user_document,user_document_sharing,network_restriction"},
+      "checkpoint": {"count": 6,"data": 6,"name1": "multi_factor_auth","name2": "client_restriction","name3": "password_strength_meter","name4": "user_document","name5": "user_document_sharing","name6": "network_restriction"},
+      "remark": "查询多个策略"
+    }
+  ]
+}

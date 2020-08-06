@@ -1,0 +1,32 @@
+{
+  "url": "xx",
+  "jsondata": {},
+  "remark": "xx",
+  "args": [
+    {
+      "url": "/api/document-domain-management/v1/policy/general/password_strength_meter/state",
+      "jsondata": "",
+      "remark": "body为空"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/password_strength_meter/state",
+      "jsondata": {},
+      "remark": "body缺少必填参数"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/password_strength_meter/state",
+      "jsondata": {"locked":111},
+      "remark": "locked参数类型错误，传参int"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/password_strength_meter/state",
+      "jsondata": {"locked":1.23},
+      "remark": "locked参数类型错误，传参浮点"
+    },
+    {
+      "url": "/api/document-domain-management/v1/policy/general/password_strength_meter/state",
+      "jsondata": {"locked":"sss"},
+      "remark": "locked参数类型错误，传参字符串"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 201,
+    "code": 400014001,
+    "message": "invalid name"
+
+  },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"^\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"&\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"*\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"(\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\")\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"+\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"=\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"`\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"{\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"}\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"[\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"]\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"【\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"】\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\":\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\";\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"：\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"|\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"、\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"<\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\">\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\",\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"《\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"》\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"，\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"。\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"?\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"？\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"/\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400014001,
+        "message": "Invalid name."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"重复的策略名称\"}",
+      "checkpoint": {
+        "status_code": 409,
+        "code": 409014000,
+        "message": "Conflict resource."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"repeat strategy\"}",
+      "checkpoint": {
+        "status_code": 409,
+        "code": 409014000,
+        "message": "Conflict resource."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"~!%#$@-_. \"}",
+      "checkpoint": {
+        "status_code": 409,
+        "code": 409014000,
+        "message": "Conflict resource."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"11111\"}",
+      "checkpoint": {
+        "status_code": 409,
+        "code": 409014000,
+        "message": "Conflict resource."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"哈哈11111ss@\"}",
+      "checkpoint": {
+        "status_code": 409,
+        "code": 409014000,
+        "message": "Conflict resource."
+      }
+    },
+     {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"a\"}",
+      "checkpoint": {
+        "status_code": 409,
+        "code": 409014000,
+        "message": "Conflict resource."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}]}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":111}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}

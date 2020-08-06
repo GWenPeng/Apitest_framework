@@ -1,0 +1,113 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "url_accessor":"" ,
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network//accessor/266c6a42-6131-4d62-8f39-853e7093701c",
+        "checkpoint": {
+          "status_code": 404,
+          "no_body": true
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "url_accessor":"/accessor/",
+        "checkpoint": {
+          "status_code": 404
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/true/accessor/266c6a42-6131-4d62-8f39-853e7093701c",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "true",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/23.23/accessor/266c6a42-6131-4d62-8f39-853e7093701c",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "23.23",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/45/accessor/266c6a42-6131-4d62-8f39-853e7093701c",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "45",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "url_accessor": "/accessor/false",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "false",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "url_accessor": "/accessor/23.45",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "23.45",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+          "url_accessor": "/accessor/456",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "456",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/dafa76e3-303a-4275-92f1-0daa598cc60f/accessor/266c6a42-6131-4d62-8f39-853e7093701c",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "dafa76e3-303a-4275-92f1-0daa598cc60f",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["id"]}
+        }
+      },
+      {  "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "url_accessor": "/accessor/266c6a42-6131-4d62-8f39-853e6093701c",
+        "checkpoint": {
+          "status_code": 207,
+          "id": "266c6a42-6131-4d62-8f39-853e6093701c",
+          "status": 404,
+          "code": 404013000,
+          "message": "Resource not found.",
+          "cause": "",
+          "detail": {"notfound_params":["accessor_id"]}
+        }
+      }
+    ]
+}

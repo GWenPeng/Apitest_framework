@@ -1,0 +1,254 @@
+{
+  "url": "/api/policy-management/v1/general",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "params": "{\"mode\":\"current\",\"offset\":\"0\",\"limit\":\"20\",\"name\":\"\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "params": {"mode":1.5,"offset":"0","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "params": {"mode":"模式","offset":"0","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "params": {"mode":"mode","offset":"0","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "params": {"mode":"**","offset":"0","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "params": {"mode":"@1s是","offset":"0","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "params": {"mode":"null","offset":"0","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+
+
+
+    {
+      "params": {"mode":"current","offset":"'111'","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset类型不正确"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":1.5,"limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=1.5"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"起始下标","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset为中文"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"offset","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset为英文"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"@","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=@"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"'       '","limit":"20","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset放中间，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"mode":"current","limit":"20","name":"client_restriction","offset":"'   '"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset放末尾，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"mode":"current","limit":"20","name":"client_restriction","offset":"null"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset=null"
+      }
+    },
+    {
+      "params": {"mode":"current","limit":"20","name":"client_restriction","offset":"-1"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "offset<0"
+      }
+    },
+
+
+
+
+    {
+      "params": {"mode":"current","offset":"0","limit":"'11'","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit格式错误"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":1.5,"name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=1.5"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"获取量","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit为中文"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"limit","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit为英文"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"@","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=@"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"@1是s","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=@1是s"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"'      '","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit放中间，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","name":"client_restriction","limit":"'   '"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit放末尾，其后包含空格且无值"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"null","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=null"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"0","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=0"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"-10","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=-10"
+      }
+    },
+    {
+      "params": {"mode":"current","offset":"0","limit":"1001","name":"client_restriction"},
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request.",
+        "remark": "limit=1001"
+      }
+    }
+  ]
+}

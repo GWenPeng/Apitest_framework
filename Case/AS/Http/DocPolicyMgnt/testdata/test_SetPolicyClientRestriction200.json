@@ -1,0 +1,74 @@
+{
+  "url": "/api/policy-management/v1/general/client_restriction/value",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"value\":[{\"name\":\"client_restriction\",\"value\":{\"android\":True,\"ios\":False,\"mac\":False,\"mobile_web\":False,\"pc_web\":False,\"windows\":False}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 200,
+    "number": 11
+  },
+  "args": [
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":true,\"ios\":false,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 4
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":true,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 2
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":false,\"mac\":true,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 32
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":false,\"mac\":false,\"mobile_web\":true,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 128
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":false,\"mac\":false,\"mobile_web\":false,\"pc_web\":true,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 64
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":false,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":true}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 16
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":true,\"ios\":false,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":true}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 20
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":true,\"ios\":true,\"mac\":true,\"mobile_web\":true,\"pc_web\":true,\"windows\":true}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 246
+      }
+    },
+    {
+      "jsondata": "[{\"name\":\"client_restriction\",\"value\":{\"android\":false,\"ios\":false,\"mac\":false,\"mobile_web\":false,\"pc_web\":false,\"windows\":false}}]",
+      "checkpoint": {
+        "status_code": 200,
+        "number": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "url": "/api/document-domain-management/v1/policy-tpl",
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 400,
+    "code": 400001,
+    "message": "invalid name"
+  },
+  "args": [
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True}}],\"name\":\"缺少length参数\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":''}}],\"name\":\"缺少length参数值\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":111,\"length\":50}}],\"name\":\"enable格式错误\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":True}}],\"name\":\"length格式错误\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":-5}}],\"name\":\"length数值错误-5\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":0}}],\"name\":\"length数值错误0\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":7}}],\"name\":\"length数值错误7\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    },
+    {
+        "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":True,\"length\":100}}],\"name\":\"length数值错误100\"}",
+        "checkpoint": {
+          "status_code": 400,
+          "code": 400000000,
+          "message": "Invalid request."
+        }
+    }
+  ]
+}

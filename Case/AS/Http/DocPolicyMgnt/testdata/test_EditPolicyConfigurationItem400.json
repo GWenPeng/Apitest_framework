@@ -1,0 +1,41 @@
+{
+  "headers": "{\"Content-Type\":\"application/json\"}",
+  "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"demo\"}",
+  "checkpoint": {
+    "status_code": 200
+  },
+  "args": [
+    {
+      "jsondata": "{\"content\":[{\"name\":\"no\",\"value\":{\"enable\":False,\"length\":8}}],\"name\":\"与现有策略不匹配\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"name\":\"缺少content参数\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":[{\"name\":\"password_strength_meter\"}],\"name\":\"缺少value参数\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    },
+    {
+      "jsondata": "{\"content\":111,\"name\":\"content类型错误\"}",
+      "checkpoint": {
+        "status_code": 400,
+        "code": 400000000,
+        "message": "Invalid request."
+      }
+    }
+  ]
+}

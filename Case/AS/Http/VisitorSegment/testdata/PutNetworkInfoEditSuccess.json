@@ -1,0 +1,36 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"192.168.2.100","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_segment"},
+        "checkpoint": {
+          "status_code": 200,
+          "end_ip": "192.168.2.199",
+          "ip_address": "",
+          "name": "edit_name",
+          "net_type": "ip_segment",
+          "start_ip": "192.168.2.100",
+          "netmask": "",
+          "detail": {"conflict_params": ["start_ip", "end_ip"]}
+        }
+      },
+      {
+        "url": "/api/policy-management/v1/user-login/network-restriction/network/",
+        "jsondata": {"name":"edit_name","start_ip":"192.168.2.100","end_ip":"192.168.2.199","ip_address":"10.2.54.1","netmask":"255.255.252.0","net_type":"ip_mask"},
+        "checkpoint": {
+          "status_code": 200,
+          "end_ip": "10.2.181.255",
+          "ip_address": "10.2.54.1",
+          "name": "edit_name",
+          "net_type": "ip_mask",
+          "start_ip": "10.2.181.1",
+          "netmask": "255.255.252.0",
+          "detail": {"conflict_params": ["ip_address", "netmask"]}
+        }
+      }
+    ]
+}

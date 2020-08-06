@@ -1,0 +1,51 @@
+{
+    "url": "/api/policy-management/v1/user-login/network-restriction/network/{id}/accessor",
+    "header": "{\"Content-Type\":\"application/json\"}",
+    "jsondata": "",
+    "checkpoint": {},
+    "args": [
+      {
+        "jsondata": [{"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id.0": "266c6a42-6131-4d62-8f39-853e7093701c",
+          "status.0": 201,
+          "body.0": {"accessor_id":"266c6a42-6131-4d62-8f39-853e7093701c","accessor_name": "admin", "accessor_type": "user"}
+        }
+      },
+      {
+        "jsondata": [{"accessor_id": "151bcb65-48ce-4b62-973f-0bb6685f9cb8", "accessor_type": "department"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id.0": "151bcb65-48ce-4b62-973f-0bb6685f9cb8",
+          "status.0": 201,
+          "body.0": {"accessor_id":"151bcb65-48ce-4b62-973f-0bb6685f9cb8","accessor_name": "组织结构", "accessor_type": "department"}
+        }
+      },
+      {
+        "jsondata": [{"accessor_id": "151bcb65-48ce-4b62-973f-0bb6685f9cb8", "accessor_type": "department"},
+                      {"accessor_id": "266c6a42-6131-4d62-8f39-853e7093701c", "accessor_type": "user"},
+                      {"accessor_id": "234562BE-88FF-4440-9BFF-447F139871A2", "accessor_type": "user"},
+                      {"accessor_id": "4bb41612-a040-11e6-887d-005056920bea", "accessor_type": "user"},
+                      {"accessor_id": "94752844-BDD0-4B9E-8927-1CA8D427E699", "accessor_type": "user"}],
+        "checkpoint": {
+          "status_code": 207,
+          "id.0": "151bcb65-48ce-4b62-973f-0bb6685f9cb8",
+          "status.0": 201,
+          "body.0": {"accessor_id":"151bcb65-48ce-4b62-973f-0bb6685f9cb8","accessor_name": "组织结构", "accessor_type": "department"},
+          "id.1": "266c6a42-6131-4d62-8f39-853e7093701c",
+          "status.1": 201,
+          "body.1": {"accessor_id":"266c6a42-6131-4d62-8f39-853e7093701c","accessor_name": "admin", "accessor_type": "user"},
+          "id.2": "234562BE-88FF-4440-9BFF-447F139871A2",
+          "status.2": 201,
+          "body.2": {"accessor_id":"234562BE-88FF-4440-9BFF-447F139871A2","accessor_name": "system", "accessor_type": "user"},
+          "id.3": "4bb41612-a040-11e6-887d-005056920bea",
+          "status.3": 201,
+          "body.3": {"accessor_id":"4bb41612-a040-11e6-887d-005056920bea","accessor_name": "security", "accessor_type": "user"},
+          "id.4": "94752844-BDD0-4B9E-8927-1CA8D427E699",
+          "status.4": 201,
+          "body.4": {"accessor_id":"94752844-BDD0-4B9E-8927-1CA8D427E699","accessor_name": "audit", "accessor_type": "user"}
+        }
+      }
+    ]
+}
